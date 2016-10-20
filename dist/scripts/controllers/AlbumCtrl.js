@@ -2,7 +2,7 @@
 (function() {
     function AlbumCtrl(Fixtures) {
         this.albumData = Fixtures.getAlbum();
-        this.albumData = albumPicasso;
+        // this.albumData = albumPicasso;
     }
 
     angular

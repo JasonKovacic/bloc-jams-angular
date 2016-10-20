@@ -1,19 +1,11 @@
 
 (function() {
-    function AlbumCtrl() {
-        console.log("flag 1")
-        var albumData = albumPicasso;
-
-
+    function AlbumCtrl(Fixtures) {
+        this.albumData = Fixtures.getAlbum();
         this.albumData = albumPicasso;
-
-
-        this.foo = "bar"
-
-        console.log(albumData)
     }
 
     angular
         .module('blocJams')
-        .controller('AlbumCtrl', AlbumCtrl);
+        .controller('AlbumCtrl', ['Fixtures', AlbumCtrl]);
 })();
